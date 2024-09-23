@@ -9,7 +9,7 @@ import {
   stubTrue
 } from 'lodash-es';
 
-import sassData from '../../../../../client/config/browser-scripts/sass-compile.json';
+import sassData from '../../../../config/browser-scripts/sass-compile.json';
 import {
   transformContents,
   transformHeadTailAndContents,
@@ -17,6 +17,10 @@ import {
   compileHeadTail
 } from '../../../../../shared/utils/polyvinyl';
 import { WorkerExecutor } from '../utils/worker-executor';
+import {
+  compileTypeScriptCode,
+  initTypeScriptService
+} from '../utils/typescript-worker-handler';
 
 const { filename: sassCompile } = sassData;
 
@@ -96,6 +100,7 @@ const NBSPReg = new RegExp(String.fromCharCode(160), 'g');
 
 const testJS = matchesProperty('ext', 'js');
 const testJSX = matchesProperty('ext', 'jsx');
+const testTypeScript = matchesProperty('ext', 'ts');
 const testHTML = matchesProperty('ext', 'html');
 const testHTML$JS$JSX = overSome(testHTML, testJS, testJSX);
 
@@ -111,19 +116,19 @@ const babelTransformer = loopProtectOptions => {
   return cond([
     [
       testJS,
-      async code => {
+      async challengeFile => {
         await loadBabel();
         await loadPresetEnv();
         const babelOptions = getBabelOptions(presetsJS, loopProtectOptions);
         return transformHeadTailAndContents(
           babelTransformCode(babelOptions),
-          code
+          challengeFile
         );
       }
     ],
     [
       testJSX,
-      async code => {
+      async challengeFile => {
         await loadBabel();
         await loadPresetReact();
         const babelOptions = getBabelOptions(presetsJSX, loopProtectOptions);
@@ -133,7 +138,22 @@ const babelTransformer = loopProtectOptions => {
             babelTransformCode(babelOptions)
           ),
           partial(setExt, 'js')
-        )(code);
+        )(challengeFile);
+      }
+    ],
+    [
+      testTypeScript,
+      async challengeFile => {
+        await loadBabel();
+        await initTypeScriptService();
+        const babelOptions = getBabelOptions(presetsJS, loopProtectOptions);
+        return flow(
+          partial(transformHeadTailAndContents, compileTypeScriptCode),
+          partial(
+            transformHeadTailAndContents,
+            babelTransformCode(babelOptions)
+          )
+        )(challengeFile);
       }
     ],
     [stubTrue, identity]
