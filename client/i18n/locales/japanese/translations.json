@@ -112,7 +112,7 @@
     "big-heading-3": "認定証を取得する。",
     "big-heading-4": "すべてが無料です。",
     "h2-heading": "2014 年以来、4 万人を超える freeCodeCamp.org 卒業生が、以下をはじめとする IT 企業で仕事を得ています。",
-    "h2-heading-b": "10 万人を超える freeCodeCamp.org 卒業生が、以下をはじめとする IT 企業で仕事を得ています。",
+    "h2-heading-b": "More than <strong>100,000</strong> freeCodeCamp.org graduates have gotten <strong>jobs</strong> at tech companies including:",
     "hero-img-description": "韓国のローカル勉強会での freeCodeCamp 受講者",
     "hero-img-alt": "さまざまな人種、性別の人々がノートパソコンの周りに集まっている様子",
     "hero-img-uis": "freeCodeCamp コードエディター (モバイル版およびデスクトップ版) と、認定証のスクリーンショット",
@@ -134,6 +134,28 @@
         "occupation": "<strong>Spotify</strong> のソフトウェアエンジニア",
         "testimony": "「私はいつも JavaScript を学ぶことに躓いていました。たくさんのコースを受講しましたが、freeCodeCamp に一番のめり込みました。JavaScript だけでなくデータ構造とアルゴリズムも学べることで、ソフトウェアエンジニアとして Spotify という夢の仕事を得るために必要な自信と<strong>スキルを freeCodeCamp は私に与えてくれました</strong>」"
       }
+    },
+    "benefits": {
+      "heading": "Why learn with freeCodeCamp:",
+      "list": [
+        {
+          "title": "Large Community",
+          "description": "Join our vibrant  learning community of students, alumni, and educators."
+        },
+        {
+          "title": "Free Education",
+          "description": "Learn from our charity and save money on your education. No paywalls. No hidden costs."
+        },
+        {
+          "title": "Extensive Certifications",
+          "description": "Earn industry-recognized, verifiable certifications in high-demand technologies."
+        },
+        {
+          "title": "Comprehensive Curriculum",
+          "description": "Enhance your technical skills with our linear, world-class, project-based curriculum."
+        }
+      ],
+      "cta": "Start Learning Now (it's free)"
     },
     "certification-heading": "以下の検証済認定証を無料で取得できます。",
     "core-certs-heading": "freeCodeCamp コアカリキュラムの検証済認定証を無料で取得:",
@@ -390,6 +412,7 @@
     "assignment-not-complete": "課題を完了してください",
     "assignments": "課題",
     "question": "質問",
+    "questions": "Questions",
     "explanation": "解説",
     "solution-link": "回答のリンク",
     "source-code-link": "ソースコードのリンク",
@@ -491,8 +514,8 @@
     "fill-in-the-blank": "空欄を埋めてください。",
     "blank": "空欄",
     "quiz": {
-      "correct-answer": "正解",
-      "incorrect-answer": "不正解",
+      "correct-answer": "Correct!",
+      "incorrect-answer": "Incorrect.",
       "unanswered-questions": "以下の質問が未回答です。すべての質問に回答してください: {{ unansweredQuestions }}",
       "have-n-correct-questions": "{{ total }} 問中 {{ correctAnswerCount }} 問正解しました。"
     },
@@ -534,13 +557,13 @@
       "transcript-label": "Microsoft 成績証明書のリンク",
       "invalid-transcript": "成績証明書のリンクが正しくありません。以下の形式になっているか確認してください: <1>https://learn.microsoft.com/LOCALE/users/USERNAME/transcript/ID</1> - 特に大文字で示した部分が正しいか確認してください。"
     },
-    "blockType": {
-      "lecture": "レクチャー",
-      "workshop": "ワークショップ",
-      "lab": "ラボ",
-      "review": "レビュー",
-      "quiz": "小テスト",
-      "exam": "試験"
+    "block-type": {
+      "lecture": "Lecture",
+      "workshop": "Workshop",
+      "lab": "Lab",
+      "review": "Review",
+      "quiz": "Quiz",
+      "exam": "Exam"
     }
   },
   "donate": {

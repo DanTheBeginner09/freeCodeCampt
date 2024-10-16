@@ -112,7 +112,7 @@
     "big-heading-3": "Obtenha certificações.",
     "big-heading-4": "De graça.",
     "h2-heading": "Desde 2014, mais de 40.000 pessoas que concluíram o freeCodeCamp.org obtiveram empregos em empresas de tecnologia incluindo:",
-    "h2-heading-b": "Mais de 100 mil pessoas já concluíram o freeCodeCamp.org e obtiveram empregos em empresas de tecnologia, incluindo:",
+    "h2-heading-b": "More than <strong>100,000</strong> freeCodeCamp.org graduates have gotten <strong>jobs</strong> at tech companies including:",
     "hero-img-description": "Estudantes do freeCodeCamp em um grupo de estudos local na Coreia do Sul.",
     "hero-img-alt": "Um grupo de pessoas, incluindo um homem branco, uma mulher negra e uma mulher asiática, reunidos ao redor de um laptop.",
     "hero-img-uis": "Um grupo de capturas de tela mostrando a interface de editor do freeCodeCamp em um dispositivo móvel e em um desktop, além de uma certificação.",
@@ -134,6 +134,28 @@
         "occupation": "Engenheira de software na <strong>Spotify</strong>",
         "testimony": "\"Eu sempre tive dificuldade em aprender JavaScript. Eu fiz muitos cursos, mas o curso do freeCodeCamp foi aquele que prendeu minha atenção. Estudar JavaScript, bem como algoritmos e estruturas de dados no <strong>freeCodeCamp me deu as habilidades</strong> e a confiança que eu precisava para conseguir o trabalho dos meus sonhos como engenheira de software na Spotify.\""
       }
+    },
+    "benefits": {
+      "heading": "Why learn with freeCodeCamp:",
+      "list": [
+        {
+          "title": "Large Community",
+          "description": "Join our vibrant  learning community of students, alumni, and educators."
+        },
+        {
+          "title": "Free Education",
+          "description": "Learn from our charity and save money on your education. No paywalls. No hidden costs."
+        },
+        {
+          "title": "Extensive Certifications",
+          "description": "Earn industry-recognized, verifiable certifications in high-demand technologies."
+        },
+        {
+          "title": "Comprehensive Curriculum",
+          "description": "Enhance your technical skills with our linear, world-class, project-based curriculum."
+        }
+      ],
+      "cta": "Start Learning Now (it's free)"
     },
     "certification-heading": "Ganhe certificações verificadas gratuitas em:",
     "core-certs-heading": "Obtenha certificações verificadas gratuitamente com o currículo principal do freeCodeCamp:",
@@ -390,6 +412,7 @@
     "assignment-not-complete": "Complete as tarefas",
     "assignments": "Tarefas",
     "question": "Questão",
+    "questions": "Questions",
     "explanation": "Explicação",
     "solution-link": "Link da solução",
     "source-code-link": "Link do código-fonte",
@@ -491,8 +514,8 @@
     "fill-in-the-blank": "Preencha o espaço em branco",
     "blank": "vazio",
     "quiz": {
-      "correct-answer": "Correto",
-      "incorrect-answer": "Incorreto",
+      "correct-answer": "Correct!",
+      "incorrect-answer": "Incorrect.",
       "unanswered-questions": "As seguintes perguntas não foram respondidas: {{ unansweredQuestions }}. Você precisa responder a todas as perguntas.",
       "have-n-correct-questions": "Você acertou {{ correctAnswerCount }} de {{ total }} perguntas."
     },
@@ -534,13 +557,13 @@
       "transcript-label": "Seu link de transcrição da Microsoft",
       "invalid-transcript": "O link da transcrição não está correto. Ele deve ter esta aparência: <1>https://learn.microsoft.com/IDIOMA_DE_LOCALIZACAO/users/NOME_DO_USUARIO/transcript/ID</1> - Confira os itens que aparecem em MAIÚSCULAS no seu link para ver se estão corretos."
     },
-    "blockType": {
-      "lecture": "Aula",
+    "block-type": {
+      "lecture": "Lecture",
       "workshop": "Workshop",
-      "lab": "Laboratório",
-      "review": "Revisão",
-      "quiz": "Questionário",
-      "exam": "Prova"
+      "lab": "Lab",
+      "review": "Review",
+      "quiz": "Quiz",
+      "exam": "Exam"
     }
   },
   "donate": {
